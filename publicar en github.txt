@@ -1,0 +1,1489 @@
+? Opciones para publicar manuales en GitHub
+1. Publicar tus manuales como archivos dentro de un repositorio
+
+Puedes crear un repositorio y subir tus manuales en formatos como:
+
+.md (Markdown) ? el más recomendado
+
+.pdf
+
+.docx
+
+.html
+
+Los usuarios podrán leerlos directamente desde GitHub o descargarlos.
+
+2. Crear un sitio web con GitHub Pages
+
+Si quieres que tu manual tenga forma de página web, GitHub ofrece GitHub Pages gratis.
+
+Con GitHub Pages puedes:
+
+Convertir tus archivos Markdown en páginas web.
+
+Usar plantillas (por ejemplo: Jekyll, MkDocs, Docusaurus).
+
+Tener una URL pública como:
+https://tuusuario.github.io/tu-manual
+
+Ideal para manuales largos y organizados.
+
+3. Publicar manuales en forma de Wiki
+
+Cada repositorio puede tener una Wiki, que permite:
+
+Crear capítulos y secciones.
+
+Editar con interfaz sencilla.
+
+Enlazar páginas.
+
+Es cómodo para documentación técnica o manuales de procedimientos.
+
+?? ¿Necesitas permiso para publicar?
+
+Solo debes asegurarte de que:
+
+El contenido es tuyo o tienes derecho a publicarlo.
+
+No contiene información privada o confidencial.
+
+Por lo demás, GitHub no pone restricciones.
+
+?? Si quieres, puedo ayudarte a:
+
+Crear el repositorio paso a paso
+
+Subir tus manuales
+
+Crear un GitHub Pages
+
+Elegir una plantilla de documentación
+
+¿Quieres que te guíe en alguno de estos procesos?
+
+Tú dijiste:
+puedes hacer paso a paso:
+Crear el repositorio paso a paso
+
+Subir tus manuales
+
+Crear un GitHub Pages
+
+Elegir una plantilla de documentación
+ChatGPT Plus
+
+¡Perfecto! Aquí tienes una guía paso a paso y en orden, desde cero hasta tener tu manual publicado como sitio web con GitHub Pages.
+
+?? 1. Crear el repositorio (paso a paso)
+A) Crear la cuenta (si no tienes)
+
+Entra a: https://github.com
+
+Crea una cuenta o inicia sesión.
+
+B) Crear un repositorio nuevo
+
+Arriba a la derecha, haz clic en + ? New repository.
+
+Rellena:
+
+Repository name: por ejemplo: manual-de-usuario
+
+Description: opcional
+
+Public (recomendado si quieres compartirlo)
+
+Marca Add a README file (muy útil).
+
+Haz clic en Create repository.
+
+¡Listo, ya tienes tu repositorio!
+
+?? 2. Subir tus manuales
+Opción A: Subir archivos desde el navegador
+
+Dentro del repositorio, haz clic en Add file ? Upload files.
+
+Arrastra tus manuales (PDF, .md, .docx, lo que tengas).
+
+Escribe un mensaje de confirmación abajo (por ej. "Subida inicial").
+
+Haz clic en Commit changes.
+
+Opción B: Crear un archivo Markdown directamente
+
+Add file ? Create new file
+
+Escribe un nombre: manual.md
+
+Escribe el contenido usando Markdown (GitHub lo muestra muy bonito).
+
+Haz clic en Commit changes.
+
+?? 3. Crear GitHub Pages para tu manual
+Opción recomendada: GitHub Pages con un generador (Jekyll / MkDocs / Docusaurus)
+
+Voy a darte lo más fácil: GitHub Pages + Jekyll (tema automático).
+
+?? Configurar GitHub Pages (simple)
+
+En tu repositorio, ve a Settings.
+
+En el menú lateral, selecciona Pages.
+
+En “Source”, elige:
+
+Deploy from a branch
+
+Branch: main
+
+Folder: /root (o /docs si usas esa carpeta)
+
+Haz clic en Save.
+
+GitHub generará la página y te dará una URL como:
+
+https://tuusuario.github.io/manual-de-usuario
+
+(Tarda ~1 minuto en aparecer).
+
+?? 4. Elegir una plantilla de documentación
+
+Aquí tienes las mejores opciones según lo que quieras:
+
+? Opción 1: Jekyll + tema de documentación (más fácil)
+
+GitHub Pages es compatible automáticamente.
+
+Temas recomendados:
+
+Minimal (viene integrado)
+
+Cayman
+
+Slate
+
+Just the Docs (MUY bueno para manuales)
+
+Doks / Tactile
+
+Activar un tema:
+
+Dentro del repositorio: Settings ? Pages ? Theme Chooser
+
+Elige un tema.
+
+GitHub crea automáticamente un archivo /_config.yml.
+
+?? Opción 2: Just the Docs (mejor para manuales largos)
+
+Muy recomendado para manuales técnicos.
+
+Pasos:
+
+Crea un archivo llamado _config.yml con:
+
+title: "Mi Manual"
+theme: just-the-docs
+
+
+Crea una carpeta /docs con archivos .md.
+
+GitHub Pages generará el sitio con menú lateral y búsqueda.
+
+??? Opción 3: MkDocs (más profesional)
+
+Requiere usar tu PC (un poco más avanzado).
+Pero permite documentación muy limpia.
+
+?? ¿Qué método quieres usar?
+
+Puedo ayudarte a implementar el que elijas:
+
+?? GitHub Pages simple
+?? GitHub Pages + Tema automático
+?? Just the Docs (recomendado)
+?? MkDocs (avanzado)
+
+Elige uno y te guío paso por paso.
+
+Tú dijiste:
+implementar paso a paso :
+?? GitHub Pages + Tema automático
+?? Just the Docs (recomendado)
+ChatGPT Plus
+
+Perfecto. Vamos a implementar las dos opciones paso a paso:
+
+——————————————————————
+? PRIMERA PARTE: GitHub Pages + Tema automático
+
+(Este es el camino más fácil)
+
+?? 1. Crear el repositorio
+
+Loguéate en GitHub.
+
+Arriba a la derecha: + ? New repository
+
+Rellena:
+
+Repository name: manual
+
+Description: opcional
+
+Visibility: Public
+
+Marca Add a README
+
+Clic en Create repository
+
+?? 2. Subir tus manuales
+
+Puedes usar:
+
+Add file ? Upload files (PDF, imágenes, etc.)
+
+o crear archivos .md (Markdown)
+
+Ejemplo:
+
+Add file ? Create new file
+
+Nombre: index.md
+
+Contenido de ejemplo:
+
+# Bienvenido a mi manual
+Este es el contenido inicial.
+
+
+Commit changes
+
+?? 3. Activar GitHub Pages
+
+Ve a Settings del repositorio
+
+Menú izquierdo ? Pages
+
+En “Source” elige:
+
+Deploy from a branch
+
+Branch: main
+
+Folder: root
+
+Guardar (Save)
+
+GitHub generará la URL:
+
+https://TU_USUARIO.github.io/manual
+
+
+(Tarda entre 30–60 segundos)
+
+?? 4. Activar un tema automático (Theme Chooser)
+
+En el mismo panel Settings ? Pages
+
+Busca Theme Chooser
+
+Clic en Choose a theme
+
+Selecciona uno:
+
+Cayman
+
+Slate
+
+Minimal (muy limpio)
+
+GitHub creará y añadirá automáticamente un archivo:
+_config.yml
+
+Tu sitio ya estará estilizado.
+
+——————————————————————
+? SEGUNDA PARTE: Usar “Just the Docs” (recomendado)
+
+(Transforma tu repositorio en una documentación profesional)
+
+Este sistema pondrá:
+
+menú lateral
+
+búsqueda
+
+navegación por secciones
+
+diseño profesional
+
+?? 1. Editar o crear el archivo _config.yml
+
+En tu repositorio:
+
+Add file ? Create new file
+
+Nombre: _config.yml
+
+Escribe esto:
+
+title: "Mi Manual"
+description: "Documentación creada con Just the Docs"
+theme: just-the-docs
+
+# Opcional: habilita la búsqueda
+search_enabled: true
+
+
+Luego ? Commit changes
+
+?? 2. Crear la estructura de páginas
+
+Crea un archivo llamado index.md:
+
+---
+title: Inicio
+nav_order: 1
+---
+
+# Bienvenido
+Este es el manual usando **Just the Docs**.
+
+
+Crea una carpeta llamada docs (opcional pero recomendable):
+
+Add file ? Create new file
+Nombre: docs/instalacion.md
+
+Contenido:
+
+---
+title: Instalación
+nav_order: 2
+---
+
+# Instalación
+Aquí va el contenido de la sección de instalación.
+
+
+Crea otro archivo:
+
+docs/uso.md
+
+---
+title: Uso del sistema
+nav_order: 3
+---
+
+# Cómo usar el sistema
+Contenido de ejemplo.
+
+?? 3. Asegurar que GitHub Pages apunte al branch correcto
+
+Ve a Settings ? Pages
+
+Asegura que esté configurado así:
+
+Source: Deploy from a branch
+
+Branch: main
+
+Folder: root (no /docs)
+
+?? Just the Docs necesita estar en la raíz del repositorio.
+
+?? 4. Esperar la publicación
+
+Visita:
+
+https://TU_USUARIO.github.io/manual
+
+
+En menos de un minuto aparecerá tu sitio con menú lateral.
+
+——————————————————————
+?? ¿Quieres que te prepare automáticamente los archivos para copiar/pegar?
+
+Puedo generarte:
+
+? Estructura completa del repositorio
+? Archivos .md listos
+? _config.yml optimizado
+? Menú lateral personalizado
+
+Dime si lo quieres simple o profesional, y te lo preparo.
+
+Tú dijiste:
+profesional
+ChatGPT Plus
+
+Perfecto. Te voy a preparar una estructura completa, profesional y lista para copiar/pegar para que tu documentación con Just the Docs quede igual que la de un proyecto real.
+
+Incluye:
+? Estructura ordenada
+? Menú lateral profesional
+? Portada elegante
+? Secciones organizadas
+? Configuración avanzada en _config.yml
+? Sistema de navegación
+? Personalización visual
+
+?? 1. Estructura profesional del repositorio
+
+Copia exactamente esta estructura en tu repositorio:
+
+/
++-- _config.yml
++-- index.md
++-- README.md
++-- docs/
+¦   +-- 01-introduccion.md
+¦   +-- 02-instalacion.md
+¦   +-- 03-configuracion.md
+¦   +-- 04-uso-basico.md
+¦   +-- 05-funciones-avanzadas.md
+¦   +-- 06-preguntas-frecuentes.md
+¦   +-- 99-glosario.md
++-- assets/
+    +-- img/
+        +-- ejemplo.png
+
+?? 2. Archivo _config.yml (completo y avanzado)
+
+Crea este archivo en la raíz del repositorio:
+
+title: "Manual Profesional"
+description: "Documentación oficial del sistema"
+theme: just-the-docs
+
+# Cambia la URL a la de tu GitHub Pages
+url: "https://TU_USUARIO.github.io"
+baseurl: "/manual"
+
+# Navegación
+nav_enabled: true
+
+# Mostrar búsqueda
+search_enabled: true
+search_heading: "Buscar"
+search_placeholder: "Buscar en el manual"
+
+# Configuración del color (tema azul profesional)
+color_scheme: "dark"
+
+# Mostrar links de edición (opcional)
+github:
+  is_project_page: true
+
+# Activar tabla de contenido automática
+kramdown:
+  toc_levels: 1..3
+
+
+?? IMPORTANTE: reemplaza TU_USUARIO por tu usuario de GitHub.
+
+?? 3. Archivo index.md (portada profesional)
+---
+title: Inicio
+nav_order: 1
+---
+
+# Manual Profesional
+Bienvenido a la documentación oficial del sistema.
+
+Este manual contiene:
+
+- Guía rápida de instalación  
+- Configuración inicial  
+- Uso básico  
+- Funciones avanzadas  
+- Solución de problemas  
+- Glosario de términos  
+
+---
+
+## ?? Objetivo
+Proveer un recurso claro, ordenado y profesional para usuarios, técnicos y administradores.
+
+---
+
+## ?? Contenido
+Este manual está organizado en secciones progresivas.  
+Usa el menú lateral para navegar hacia cualquier capítulo.
+
+?? 4. Contenido profesional de cada sección
+
+A continuación te doy todos los archivos listos para copiar/pegar:
+
+?? docs/01-introduccion.md
+---
+title: Introducción
+nav_order: 2
+---
+
+# Introducción
+
+Este manual describe el funcionamiento general del sistema.  
+Incluye instrucciones detalladas, ejemplos y buenas prácticas.
+
+?? docs/02-instalacion.md
+---
+title: Instalación
+nav_order: 3
+---
+
+# Instalación
+
+## Requisitos previos
+- Sistema operativo compatible  
+- Acceso a Internet  
+- Permisos de instalación  
+
+## Pasos básicos
+1. Descargue el paquete desde el repositorio oficial.  
+2. Ejecute el instalador.  
+3. Configure las opciones iniciales.
+
+?? docs/03-configuracion.md
+---
+title: Configuración
+nav_order: 4
+---
+
+# Configuración
+
+Este capítulo cubre:
+- Ajustes iniciales  
+- Parámetros avanzados  
+- Integraciones opcionales
+
+?? docs/04-uso-basico.md
+---
+title: Uso básico
+nav_order: 5
+---
+
+# Uso básico
+
+Aquí aprenderás los conceptos esenciales para operar el sistema.
+
+?? docs/05-funciones-avanzadas.md
+---
+title: Funciones avanzadas
+nav_order: 6
+---
+
+# Funciones avanzadas
+
+Para usuarios que requieren capacidades técnicas más avanzadas.
+
+?? docs/06-preguntas-frecuentes.md
+---
+title: Preguntas frecuentes
+nav_order: 7
+---
+
+# Preguntas frecuentes
+
+**¿Puedo usar este sistema en diferentes equipos?**  
+Sí, simplemente repita el proceso de instalación en cada uno.
+
+?? docs/99-glosario.md
+---
+title: Glosario
+nav_order: 99
+---
+
+# Glosario
+
+**API**  
+Interfaz de programación que permite comunicar sistemas.
+
+?? 5. Activar GitHub Pages
+
+Ve a Settings ? Pages
+
+En Source:
+
+Deploy from a branch
+
+Branch: main
+
+Folder: /root
+
+Guardar
+
+Tu sitio estará en:
+
+https://TU_USUARIO.github.io/manual
+
+?? LISTO. Tienes documentación profesional.
+?? ¿Quieres que adapte esta estructura al tipo de manual que estás creando?
+
+Puedo personalizar:
+
+títulos,
+
+colores,
+
+secciones,
+
+iconos,
+
+estilo profesional corporativo,
+
+o incluso generar todo el contenido basado en tu proyecto.
+
+¿Deseas una versión personalizada?
+
+Tú dijiste:
+si por favor
+ChatGPT Plus
+
+¡Perfecto! Para generar una versión totalmente personalizada y profesional de tu manual, necesito conocer algunos detalles clave sobre tu proyecto.
+
+Por favor responde estas preguntas:
+
+?? 1. ¿De qué trata tu manual?
+
+Describe en 1–3 frases cuál es el propósito del sistema, herramienta, aplicación o proceso.
+
+Ejemplo:
+
+“Es un sistema para gestionar inventarios en pequeñas empresas.”
+
+?? 2. ¿Quiénes son los usuarios del manual?
+
+Elige uno o varios:
+
+Usuarios finales
+
+Técnicos
+
+Administradores
+
+Personal de soporte
+
+Estudiantes
+
+Público general
+
+?? 3. ¿Qué estilo quieres?
+
+Elige uno:
+
+?? Profesional Corporativo (formal, serio, minimalista)
+
+?? Tecnológico Moderno (tipo documentación de APIs)
+
+?? Educativo / Curso (más didáctico)
+
+?? Industrial / Operativo
+
+?? Amigable y simple
+
+?? 4. ¿Qué secciones quieres incluir?
+
+Puedes usar la estructura estándar o decirme las tuyas.
+Estructura estándar:
+
+Introducción
+
+Instalación
+
+Configuración
+
+Uso Básico
+
+Uso Avanzado
+
+Solución de Problemas
+
+FAQ
+
+Glosario
+
+¿Deseas agregar, quitar o renombrar secciones?
+
+?? 5. ¿Quieres añadir tu logo o colores corporativos?
+
+Sí / No
+
+Si sí: describe colores o proporciona URL del logo.
+
+?? 6. ¿Quieres que genere también el contenido completo del manual?
+
+(de forma profesional, listo para publicar)
+
+Sí, generar TODO el contenido
+
+No, solo la estructura
+
+Quiero que me preguntes capítulo por capítulo
+
+?? Responde estas preguntas
+
+Con esa información crearé:
+
+? El manual completo
+? La estructura del repositorio
+? Los archivos .md listos
+? El diseño personalizado
+? El estilo corporativo o temático
+? GitHub Pages preparado para funcionar
+
+Quedo atento para comenzar la personalización. ??
+
+Tú dijiste:
+1. ¿De qué trata tu manual? Manual tecnico para clases de los ciclos tecnologicos
+ChatGPT Plus
+
+Perfecto, gracias por la primera respuesta.
+Continuemos para dejar tu manual 100% personalizado y profesional.
+
+Por favor responde estas preguntas restantes:
+
+?? 2. ¿Quiénes serán los usuarios del manual?
+
+Elige uno o varios:
+
+Usuarios finales
+
+Técnicos
+
+Administradores
+
+Personal docente
+
+Estudiantes del ciclo tecnológico
+
+Público general
+
+?? 3. ¿Qué estilo deseas para tu manual técnico?
+
+Puedes elegir el que más se ajuste a tus clases:
+
+?? Profesional Corporativo (formal, limpio, tipo manual institucional)
+
+?? Tecnológico Moderno (como documentación de software, APIs, sistemas)
+
+?? Educativo / Académico (pensado para estudiantes, claro y didáctico)
+
+?? Industrial / Técnico (diagramas, procesos, máquinas, pasos operativos)
+
+?? Simple / Minimalista
+
+?? 4. ¿Qué secciones quieres incluir?
+
+Aquí tienes una propuesta para ciclos tecnológicos, puedes usarla o modificarla:
+
+Introducción
+
+Objetivos del módulo
+
+Requisitos previos
+
+Instalación de herramientas
+
+Fundamentos teóricos
+
+Prácticas guiadas
+
+Casos de estudio
+
+Solución de problemas
+
+Evaluación / Actividades
+
+Recursos adicionales
+
+Glosario
+
+¿Quieres esta estructura o deseas agregar, quitar o renombrar secciones?
+
+?? 5. ¿Quieres incluir logo o colores institucionales?
+
+Sí / No
+
+Si sí ? descríbeme colores o la institución (para generar paleta profesional)
+
+?? 6. ¿Quieres que genere también el contenido completo del manual?
+
+? Sí, generar TODO el contenido
+
+? No, solo la estructura y diseño
+
+? Quiero que me lo generes capítulo por capítulo
+
+? Cuando responda estas preguntas, crearé:
+
+El repositorio organizado
+
+El GitHub Pages profesional
+
+La plantilla Just the Docs personalizada
+
+Los archivos .md completos
+
+Todos los capítulos listos para publicar
+
+Quedo atento a tus respuestas.
+
+Tú dijiste:
+2. ¿Quiénes serán los usuarios del manual? Personal docente
+
+Estudiantes del ciclo tecnológico
+ChatGPT Plus
+
+Perfecto, gracias.
+Continuemos con la personalización del manual técnico.
+
+Ya tenemos:
+
+? Trata sobre: Manual técnico para clases de los ciclos tecnológicos
+? Usuarios: Personal docente y Estudiantes del ciclo tecnológico
+
+Ahora necesito tus respuestas para los puntos restantes:
+
+?? 3. ¿Qué estilo deseas para tu manual técnico?
+
+Elige uno:
+
+?? Profesional Corporativo (formal, institucional, ideal para docentes)
+
+?? Tecnológico Moderno (estilo documentación de software, muy limpio)
+
+?? Educativo / Académico (didáctico, con ejemplos para estudiantes)
+
+?? Industrial / Técnico (para módulos muy operativos)
+
+?? Simple / Minimalista
+
+?? 4. ¿Qué secciones quieres incluir?
+
+Aquí está la propuesta estándar para ciclos tecnológicos:
+
+Introducción
+
+Objetivos del módulo
+
+Requisitos previos
+
+Instalación de herramientas
+
+Fundamentos teóricos
+
+Prácticas guiadas
+
+Casos de estudio
+
+Solución de problemas
+
+Evaluación / Actividades
+
+Recursos adicionales
+
+Glosario
+
+¿Quieres esta estructura o deseas agregar, quitar o renombrar secciones?
+
+?? 5. ¿Quieres incluir logo o colores institucionales?
+
+Sí / No
+
+Si sí ? dime los colores o el nombre de la institución para generar una paleta profesional.
+
+?? 6. ¿Quieres que genere también el contenido completo del manual?
+
+Elige una opción:
+
+? Sí, generar TODO el contenido del manual automáticamente
+
+? No, solo quiero la estructura y los archivos vacíos
+
+? Quiero que lo generes capítulo por capítulo según te pida
+
+?? Responde estas 4 preguntas y te entregaré el manual técnico completo, profesional y listo para publicar en GitHub Pages.
+
+Tú dijiste:
+3. ¿Qué estilo deseas para tu manual técnico?
+?? Profesional Corporativo (formal, institucional, ideal para docentes)
+4. ¿Qué secciones quieres incluir?
+Introducción
+
+Objetivos del módulo
+
+Requisitos previos
+
+Instalación de herramientas
+
+Fundamentos teóricos
+
+Prácticas guiadas
+
+Casos de estudio
+
+Solución de problemas
+
+Evaluación / Actividades
+
+Recursos adicionales
+
+Glosario
+ChatGPT Plus
+
+Perfecto, ya tenemos:
+
+? Estilo: Profesional Corporativo
+? Secciones: (todas las que listaste)
+
+Nos faltan dos últimas respuestas para poder generar el manual completo y personalizado:
+
+?? 5. ¿Quieres incluir logo o colores institucionales?
+
+Sí / No
+Si es Sí, indícame:
+
+Los colores corporativos (por ejemplo: azul #0033A0, blanco, gris)
+
+O el nombre de la institución (para crear una paleta acorde)
+
+?? 6. ¿Quieres que genere también el contenido completo del manual?
+
+Elige una opción:
+
+? Sí, generar TODO el contenido del manual automáticamente
+
+? No, solo la estructura y archivos vacíos
+
+? Quiero que lo generes capítulo por capítulo según te pida
+
+?? Con tus respuestas crearé:
+
+El repositorio estructurado
+
+El GitHub Pages configurado
+
+El diseño corporativo (colores, portada, estilo)
+
+Los archivos .md completos y profesionales
+
+El manual técnico listo para publicar
+
+Espero tus dos respuestas.
+
+Tú dijiste:
+?? 5. ¿Quieres incluir logo o colores institucionales?
+ChatGPT Plus
+
+Para poder continuar necesito que elijas una de estas opciones:
+
+?? 5. ¿Quieres incluir logo o colores institucionales?
+
+Por favor responde solo una:
+
+Sí, quiero incluir logo y colores institucionales
+(y me indicas los colores, o el nombre de la institución)
+
+o
+
+No, no quiero incluir logo ni colores institucionales
+
+Cuando me respondas esto, seguimos con el siguiente paso para generar tu manual profesional.
+
+Tú dijiste:
+LOGO: CEU Andalucia
+ChatGPT Plus
+
+Perfecto, ahora tenemos:
+
+? Logo / Institución: CEU Andalucía
+? Esto nos permite generar una paleta de colores corporativa y estilo profesional para el manual.
+
+Ahora solo falta la última respuesta:
+
+?? 6. ¿Quieres que genere también el contenido completo del manual?
+
+Opciones:
+
+Sí, generar TODO el contenido automáticamente (textos profesionales para cada sección)
+
+No, solo quiero la estructura y archivos vacíos
+
+Generarlo capítulo por capítulo según te indique
+
+¿Con cuál opción continuamos?
+
+Tú dijiste:
+No, solo quiero la estructura y archivos vacíos
+ChatGPT Plus
+
+¡Perfecto! Entonces generaremos un manual técnico profesional para CEU Andalucía, con estilo corporativo, listo para GitHub Pages, estructura completa y archivos .md vacíos listos para rellenar.
+
+Aquí tienes todo paso a paso:
+
+?? 1. Estructura del repositorio
+/manual-ceu-andalucia
++-- _config.yml
++-- index.md
++-- README.md
++-- docs/
+¦   +-- 01-introduccion.md
+¦   +-- 02-objetivos-del-modulo.md
+¦   +-- 03-requisitos-previos.md
+¦   +-- 04-instalacion-de-herramientas.md
+¦   +-- 05-fundamentos-teoricos.md
+¦   +-- 06-practicas-guiadas.md
+¦   +-- 07-casos-de-estudio.md
+¦   +-- 08-solucion-de-problemas.md
+¦   +-- 09-evaluacion-actividades.md
+¦   +-- 10-recursos-adicionales.md
+¦   +-- 11-glosario.md
++-- assets/
+    +-- img/
+        +-- logo-ceu-andalucia.png
+
+?? 2. Archivo _config.yml (estilo profesional CEU Andalucía)
+title: "Manual Técnico CEU Andalucía"
+description: "Manual técnico para clases de ciclos tecnológicos"
+theme: just-the-docs
+
+# URL y base
+url: "https://TU_USUARIO.github.io"
+baseurl: "/manual-ceu-andalucia"
+
+# Navegación
+nav_enabled: true
+
+# Búsqueda
+search_enabled: true
+search_heading: "Buscar"
+search_placeholder: "Buscar en el manual"
+
+# Colores corporativos (CEU Andalucía: azul y blanco)
+color_scheme: "light"
+primary_color: "#0033A0"   # azul CEU Andalucía
+accent_color: "#FFFFFF"    # blanco
+
+# Tabla de contenidos automática
+kramdown:
+  toc_levels: 1..3
+
+
+?? Reemplaza TU_USUARIO por tu usuario de GitHub.
+
+?? 3. Archivo index.md (portada vacía lista para rellenar)
+---
+title: Inicio
+nav_order: 1
+---
+
+# Manual Técnico CEU Andalucía
+
+Bienvenido al manual técnico para ciclos tecnológicos.
+
+Utiliza el menú lateral para navegar entre las secciones del manual.
+
+?? 4. Archivos vacíos de cada sección
+
+Crea cada archivo dentro de docs/ como sigue (solo con título y orden de navegación):
+
+docs/01-introduccion.md
+---
+title: Introducción
+nav_order: 2
+---
+
+# Introducción
+
+docs/02-objetivos-del-modulo.md
+---
+title: Objetivos del módulo
+nav_order: 3
+---
+
+# Objetivos del módulo
+
+docs/03-requisitos-previos.md
+---
+title: Requisitos previos
+nav_order: 4
+---
+
+# Requisitos previos
+
+docs/04-instalacion-de-herramientas.md
+---
+title: Instalación de herramientas
+nav_order: 5
+---
+
+# Instalación de herramientas
+
+docs/05-fundamentos-teoricos.md
+---
+title: Fundamentos teóricos
+nav_order: 6
+---
+
+# Fundamentos teóricos
+
+docs/06-practicas-guiadas.md
+---
+title: Prácticas guiadas
+nav_order: 7
+---
+
+# Prácticas guiadas
+
+docs/07-casos-de-estudio.md
+---
+title: Casos de estudio
+nav_order: 8
+---
+
+# Casos de estudio
+
+docs/08-solucion-de-problemas.md
+---
+title: Solución de problemas
+nav_order: 9
+---
+
+# Solución de problemas
+
+docs/09-evaluacion-actividades.md
+---
+title: Evaluación / Actividades
+nav_order: 10
+---
+
+# Evaluación / Actividades
+
+docs/10-recursos-adicionales.md
+---
+title: Recursos adicionales
+nav_order: 11
+---
+
+# Recursos adicionales
+
+docs/11-glosario.md
+---
+title: Glosario
+nav_order: 12
+---
+
+# Glosario
+
+?? 5. Subir el logo
+
+Coloca el logo de CEU Andalucía en: assets/img/logo-ceu-andalucia.png
+
+Luego puedes incluirlo en la portada (index.md) usando Markdown:
+
+![Logo CEU Andalucía](assets/img/logo-ceu-andalucia.png)
+
+?? 6. Activar GitHub Pages
+
+Ve a Settings ? Pages
+
+Source:
+
+Branch: main
+
+Folder: /root
+
+Guardar
+
+Tu sitio quedará en:
+
+https://TU_USUARIO.github.io/manual-ceu-andalucia
+
+? ¡Listo!
+
+Tienes ahora:
+
+Estructura profesional de manual
+
+Archivos .md vacíos y ordenados
+
+Plantilla Just the Docs configurada
+
+GitHub Pages listo para publicar
+
+Si quieres, puedo hacer un archivo ZIP listo para subir a GitHub, con toda la estructura, carpetas, _config.yml, index y archivos vacíos, ya listo para empezar a rellenar.
+
+¿Quieres que haga eso?
+
+Tú dijiste:
+por ahora me vale, voy a hacer una prueba
+ChatGPT Plus
+
+¡Perfecto! ??
+Es una excelente forma de probar que todo funciona y que GitHub Pages genera el sitio correctamente.
+
+Un par de consejos para la prueba:
+
+Sube primero _config.yml y index.md para ver la portada.
+
+Luego sube los archivos de docs/ para que aparezcan en el menú lateral.
+
+Asegúrate de que GitHub Pages esté apuntando al branch main y carpeta /root.
+
+Espera 30–60 segundos y visita la URL generada para ver tu manual profesional.
+
+Si ves que algo no aparece como quieres o quieres ajustar colores, menús o el logo, me avisas y lo dejamos perfecto.
+
+¿Quieres que te dé un mini-checklist rápido para la primera prueba antes de publicarlo?
+
+Tú dijiste:
+si por favor
+ChatGPT Plus
+
+¡Perfecto! Aquí tienes un checklist rápido para tu primera prueba en GitHub Pages con tu manual:
+
+? Checklist para la primera prueba
+1. Repositorio
+
+ Crea un repositorio público (ej: manual-ceu-andalucia)
+
+ Agrega un README.md inicial
+
+2. Archivos principales
+
+ _config.yml subido a la raíz
+
+ index.md subido a la raíz
+
+ Carpeta docs/ con al menos un archivo .md (01-introduccion.md)
+
+3. Carpeta de recursos (opcional en prueba)
+
+ Carpeta assets/img/ con el logo (logo-ceu-andalucia.png)
+
+ Incluir logo en index.md usando Markdown:
+
+![Logo CEU Andalucía](assets/img/logo-ceu-andalucia.png)
+
+4. Configuración de GitHub Pages
+
+ Ve a Settings ? Pages
+
+ Source: main branch, carpeta /root
+
+ Guardar
+
+ Esperar 30–60 segundos para que se genere el sitio
+
+5. Verificación inicial
+
+ Visitar la URL:
+
+https://TU_USUARIO.github.io/manual-ceu-andalucia
+
+
+ Verificar que el logo y la portada aparecen
+
+ Verificar que el menú lateral muestra las secciones de docs/
+
+6. Ajustes rápidos
+
+Si el menú lateral no aparece: verifica que los archivos .md tengan nav_order en el front matter.
+
+Si el logo no se ve: revisa la ruta (assets/img/logo-ceu-andalucia.png) y que el archivo esté subido.
+
+Si la página no carga: espera un par de minutos o revisa que GitHub Pages esté activo.
+
+Si quieres, después de tu prueba puedo enseñarte un pequeño truco para que el menú lateral solo muestre secciones cuando tengan contenido, así tu manual luce más profesional desde el inicio.
+
+¿Quieres que te enseñe ese truco?
+
+Tú dijiste:
+si por favor
+ChatGPT Plus
+
+¡Genial! ?? Vamos a hacer que tu menú lateral solo muestre secciones cuando tengan contenido, así tu manual se ve limpio y profesional desde el inicio.
+
+Esto se hace con Just the Docs usando un pequeño ajuste en los archivos .md y en _config.yml.
+
+?? Truco: Menú lateral dinámico
+1. Front matter en cada archivo
+
+En la parte superior de cada archivo .md (front matter), asegúrate de tener al menos esto:
+
+---
+title: Nombre de la sección
+nav_order: 2  # Cambia según el orden
+published: true  # <--- Esto hace que se muestre en el menú
+---
+
+
+published: true ? La sección aparecerá en el menú lateral.
+
+Si no quieres que aparezca aún, pon published: false.
+
+Ejemplo para un archivo vacío que todavía no vas a usar:
+
+---
+title: Casos de estudio
+nav_order: 7
+published: false
+---
+
+
+Cuando quieras activarlo, solo cambia a true.
+
+2. Configuración en _config.yml
+
+Asegúrate de tener esta línea (Just the Docs lo soporta por defecto):
+
+# Mostrar solo páginas publicadas en el menú
+hide_unpublished_pages: true
+
+
+Si tu _config.yml todavía no tiene esa opción, agrégala. Esto hace que cualquier archivo con published: false no aparezca en el menú lateral.
+
+3. Beneficios
+
+Mantienes el manual limpio mientras construyes contenido.
+
+Las secciones incompletas no confunden a los usuarios.
+
+Fácil de activar cuando termines de redactar cada sección.
+
+Si quieres, puedo modificar tu estructura de repositorio vacía para que todos los archivos .md tengan published: false por defecto, y solo los que quieras mostrar aparezcan automáticamente en el menú. Esto te da un inicio muy limpio y profesional.
+
+¿Quieres que haga eso?
+
+Tú dijiste:
+no hace falte, me vale
+ChatGPT Plus
+
+¡Perfecto! ??
+Entonces puedes continuar con tu prueba tal como está.
+
+Cuando empieces a rellenar las secciones, el menú lateral se irá llenando automáticamente y tu manual seguirá con estilo profesional CEU Andalucía.
+
+Si en algún momento quieres mejorar diseño, colores, iconos o funcionalidades de búsqueda, puedo ayudarte a implementarlo fácilmente.
+
+Puedes empezar a subir los archivos y ver tu GitHub Pages funcionando. ??
+
+¿Quieres que te dé un tip rápido para organizar los archivos .md mientras escribes para no perderte?
+
+Tú dijiste:
+si pusiera privado este manual, como acceden las personas que quiero autoriar?
+ChatGPT Plus
+
+¡Buena pregunta! ?? Cuando pones un repositorio de GitHub en privado, nadie puede acceder al contenido público a menos que los autorices explícitamente. Para que otras personas vean tu manual, tienes estas opciones:
+
+1?? Invitar colaboradores directamente (para edición y lectura)
+
+Si quieres que puedan ver y editar el repositorio:
+
+Ve a tu repositorio ? Settings ? Collaborators (o Manage access).
+
+Haz clic en Invite a collaborator.
+
+Escribe el nombre de usuario de GitHub de la persona.
+
+La persona recibirá un correo/invitación y podrá acceder al repositorio privado.
+
+? Perfecto para docentes o colegas que necesiten editar contenido.
+
+2?? Compartir GitHub Pages privado
+
+Esto es un poco más limitado:
+
+GitHub Pages no funciona directamente con repos privados para el público en general.
+
+Solo usuarios que tengan acceso al repositorio pueden ver el sitio usando un enlace temporal (requiere autenticación).
+
+Alternativa: usar GitHub Enterprise o servicios externos para publicar páginas privadas.
+
+3?? Alternativa práctica
+
+Si quieres compartir tu manual solo con algunas personas sin que sea público:
+
+Mantén el repositorio privado.
+
+Invita a las personas como colaboradores para que puedan clonar o descargar el manual.
+
+Opcional: pueden abrirlo localmente en un navegador con Jekyll o leer los archivos .md directamente.
+
+?? Tip:
+Si tu objetivo es lectura limitada pero sin edición, lo más fácil es:
+
+Mantener repositorio privado.
+
+Invitar a cada usuario como colaborador con permiso de lectura.
+
+Compartir instrucciones para que puedan ver los archivos o clonar el repositorio.
+
+Si quieres, puedo explicarte una forma de simular un GitHub Pages privado para que tus alumnos o docentes vean el manual en un navegador, sin hacerlo público.
+
+¿Quieres que haga eso?
+
+Tú dijiste:
+si por favor
+ChatGPT Plus
+
+¡Perfecto! ?? Te explico cómo simular un GitHub Pages privado para que solo las personas autorizadas puedan ver tu manual en el navegador, aunque el repositorio sea privado.
+
+?? Opciones para GitHub Pages privado
+
+GitHub Pages no permite sitios privados “nativos” para repositorios públicos. Pero podemos usar autenticación básica o servicios externos:
+
+Opción 1: Usar GitHub + Jekyll localmente (más técnico)
+
+Mantienes el repositorio privado.
+
+Los usuarios autorizados clonan el repositorio:
+
+git clone https://github.com/TU_USUARIO/manual-ceu-andalucia.git
+
+
+Instalan Jekyll y ejecutan el sitio local:
+
+bundle exec jekyll serve
+
+
+Acceden desde su navegador a http://localhost:4000.
+
+? Ventaja: nadie más puede acceder, solo quienes tengan acceso al repositorio y sepan cómo usar Jekyll.
+? Desventaja: requiere instalación y conocimientos técnicos mínimos.
+
+Opción 2: Publicar en un servicio externo con contraseña
+
+Genera el sitio estático (Jekyll genera archivos HTML en _site/).
+
+Súbelo a un servicio que permita proteger con contraseña:
+
+Netlify (gratis) ? permite añadir autenticación básica
+
+Vercel ? también se puede proteger con contraseña
+
+GitLab Pages ? permite controlar acceso si usas GitLab privado
+
+? Ventaja: tus usuarios solo necesitan un navegador y contraseña.
+? Desventaja: hay un paso extra de subir los archivos a otro servicio.
+
+Opción 3: Compartir solo archivos PDF/Markdown
+
+Convierte tu manual en PDF o ZIP con todos los archivos .md.
+
+Comparte con tus docentes o estudiantes mediante correo o Google Drive/OneDrive.
+
+? Ventaja: muy simple y seguro.
+? Desventaja: pierdes la interactividad de GitHub Pages.
+
+?? Mi recomendación profesional para un manual privado de clases:
+
+Mantén el repositorio privado en GitHub.
+
+Invita solo a docentes y estudiantes como colaboradores.
+
+Usa Opción 2 si quieres que puedan ver el manual en navegador sin instalar nada.
